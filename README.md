@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ResellerHub — Multi-Vendor Reseller Platform
 
-## Getting Started
+A portfolio-grade reseller and multi-vendor commerce platform built with **Next.js, React, TypeScript and Supabase-ready architecture**.
 
-First, run the development server:
+## 🎯 Project Goal
+
+ResellerHub is designed to demonstrate how a modern reseller marketplace can be structured from the frontend through the backend/data layer. The project focuses on clean UI, scalable architecture and practical commerce workflows.
+
+## ✨ Current Highlights
+
+- Modern responsive landing/storefront experience
+- Reseller-focused marketplace concept
+- Next.js App Router structure
+- TypeScript-based application code
+- Supabase/PostgreSQL-ready architecture
+- Clear separation between UI, data and API responsibilities
+- Mobile-responsive design
+- Professional project documentation
+
+## 🧰 Technology Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | Next.js, React, TypeScript |
+| Styling | CSS / Tailwind CSS-ready |
+| Backend / Data | Supabase, PostgreSQL |
+| API | REST API architecture |
+| Version Control | Git, GitHub |
+
+## 📁 Project Structure
+
+```text
+reseller-platfrom/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── .gitignore
+├── eslint.config.mjs
+├── next.config.ts
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── tsconfig.json
+└── README.md
+```
+
+## 🚀 Run Locally
+
+### 1. Clone
+
+```bash
+git clone https://github.com/SheikhNazmul/reseller-platfrom.git
+cd reseller-platfrom
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4. Production build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 🔐 Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+When Supabase functionality is connected, create `.env.local` and add your project credentials. Never commit secrets to GitHub.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🗺️ Planned Features
 
-## Deploy on Vercel
+- User and reseller authentication
+- Product catalog and categories
+- Seller/reseller dashboard
+- Inventory management
+- Cart and order management
+- Commission and reseller pricing logic
+- Payment integration
+- Admin dashboard
+- Order status tracking
+- Analytics and reporting
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 👨‍💻 Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Sheikh Nazmul Islam NIR**
+
+- GitHub: https://github.com/SheikhNazmul
+- Portfolio: https://sheikhnazmul.github.io/portfolio/
+
+## 📌 Portfolio Note
+
+This repository is maintained as a practical full-stack portfolio project to demonstrate modern web development, database integration and scalable product architecture.
